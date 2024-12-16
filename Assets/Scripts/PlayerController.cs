@@ -43,7 +43,10 @@ public class PlayerController : MonoBehaviour
         hasPowerup = false;
         powerupIndicator.gameObject.SetActive(false);
     }
-
+//access modifier (optional)
+            //return type (like void)
+                    //method name (no spaces, must start with letter)
+                    //should be concise and meaningful
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Enemy") && hasPowerup)
