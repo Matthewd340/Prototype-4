@@ -36,10 +36,13 @@ public class PlayerController : MonoBehaviour
             powerupIndicator.gameObject.SetActive(true);
         }
     }
-
+   //IEnumerator used as return type for coroutine
+   //coroutine can suspend executioon (yield) until YieldInstruction finishes
     IEnumerator PowerupCountdownRoutine()
+    //          Coroutine data type
     {
         yield return new WaitForSeconds(7);
+        //                  YieldInstruction
         hasPowerup = false;
         powerupIndicator.gameObject.SetActive(false);
     }
