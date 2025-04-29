@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Powerup
   - Enemy
+  - Shooting Powerup
+  - Projectile
+  - Jump Powerup
+  - Ground
   layers:
   - Default
   - TransparentFX

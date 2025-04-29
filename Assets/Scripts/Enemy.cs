@@ -23,5 +23,10 @@ public class Enemy : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if (transform.position.y > 0)
+        {
+            transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+        }
     }
 }
