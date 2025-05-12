@@ -12,6 +12,7 @@ public class SpawnManager : MonoBehaviour
     private float spawnRange = 9;
     public int enemyCount = 2;
     public int waveNumber = 0;
+    public int deathCount;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class SpawnManager : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("L's Taken: " + deathCount);
         enemyCount = FindObjectsOfType<Enemy>().Length;
         if (enemyCount == 0)
         {

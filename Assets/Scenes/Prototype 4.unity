@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 540853ff5c15b45c3850fb49ec6a6ac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 50
+  rotationSpeed: 100
 --- !u!4 &163587577
 Transform:
   m_ObjectHideFlags: 0
@@ -924,6 +924,7 @@ MonoBehaviour:
   jumpPowerupPrefab: {fileID: 184152306496005407, guid: eb0e8d18a4ae44615a872c721d13c765, type: 3}
   enemyCount: 0
   waveNumber: 1
+  deathCount: 0
 --- !u!4 &1520384088
 Transform:
   m_ObjectHideFlags: 0

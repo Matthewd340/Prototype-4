@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     public GameObject rocketPrefabDown;
     public GameObject rocketPrefabRight;
     private GameObject player;
+    private SpawnManager spawnManager;
 
     // Start is called before the first frame update
     void Start()
@@ -29,11 +30,18 @@ public class PlayerController : MonoBehaviour
         playerRb = GetComponent<Rigidbody>();
         focalPoint = GameObject.Find("Focal Point");
         player = GameObject.Find("Player");
+        spawnManager = GameObject.Find("Spawn Manager").GetComponent<SpawnManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if (transform.position.y < -10)
+        {
+            transform.position = new Vector3(0,0,0);
+            spawnManager.deathCount += 1;
+        }
 
 
         float forwardInput = Input.GetAxis("Vertical");
